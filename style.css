@@ -21,3 +21,14 @@ body {
     background-color: green;
     color: white;
 }
+
+#generate {
+    width: 200px;
+    height: 60px;
+    font-family: MS PGothic;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
