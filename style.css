@@ -1,12 +1,23 @@
+body {
+    font-family: MS PGothic;
+}
+
 .grid-container {
-    margin-left: 450px;
+    margin-left: 570px;
     display: grid;
-    grid-template-columns: repeat(5, 200px);
-    grid-template-rows: repeat(5, 200px);
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: repeat(5, 150px);
     gap: 5px;
 }
 
 .grid-item {
     background-color: #ffffff;
     border: 1px solid #000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid-item.clicked {
+    background-color: green;
+    color: white;
 }
