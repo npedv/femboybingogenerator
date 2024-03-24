@@ -34,7 +34,7 @@ generateButton.addEventListener("click", function onClick () {
         for(let i = 1; i < 25; i++){
             let w = document.querySelector(`#casebingo${i}`)
             let g
-            g = getRandomNumber(27)
+            g = getRandomNumber(31)
             let t1 = await titles.bingocards[g]
             let t1t = t1.title
             w.append(titlesc(t1t))
