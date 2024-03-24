@@ -1,34 +1,81 @@
-body {
-    font-family: MS PGothic;
+@media screen and (min-width: 80rem) {
+    body {
+        font-family: MS PGothic;
+    }
+    
+    .grid-container {
+        margin-left: 570px;
+        display: grid;
+        grid-template-columns: repeat(5, 150px);
+        grid-template-rows: repeat(5, 150px);
+    }
+    
+    .grid-item {
+        background-color: #ffffff;
+        border: 1px solid #000;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .grid-item.clicked {
+        background-color: green;
+        color: white;
+    }
+    
+    #generate {
+        width: 200px;
+        height: 60px;
+        font-family: MS PGothic;
+        color: white;
+        background-color: green;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
 }
 
-.grid-container {
-    margin-left: 570px;
-    display: grid;
-    grid-template-columns: repeat(5, 150px);
-    grid-template-rows: repeat(5, 150px);
-    gap: 5px;
-}
+@media screen and (max-width: 80rem) {
+    body {
+        font-family: Arial;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(5, 220px);
+        grid-template-rows: repeat(5, 220px);
+    }
+    
+    .grid-item {
+        background-color: #ffffff;
+        border: 1px solid #000;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .grid-item.clicked {
+        background-color: green;
+        color: white;
+    }
+    
+    #generate {
+        width: 400px;
+        height: 100px;
+        font-family: Arial;
+        color: white;
+        background-color: green;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
 
-.grid-item {
-    background-color: #ffffff;
-    border: 1px solid #000;
-    text-align: center;
-    cursor: pointer;
-}
+    h1 {
+        font-size: 60px;
+    }
 
-.grid-item.clicked {
-    background-color: green;
-    color: white;
+    .buttonH1 {
+        font-size: 40px;
+    }
 }
-
-#generate {
-    width: 200px;
-    height: 60px;
-    font-family: MS PGothic;
-    color: white;
-    background-color: green;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
+  
+  
+  
