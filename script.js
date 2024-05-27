@@ -1,6 +1,7 @@
 let generateButton = document.querySelector("#generate")
 let bingoGrid = document.querySelector("#bingo")
-let type
+let params = new URLSearchParams(window.location.search)
+let type = params.get("type")
 
 let alreadygenerated = []
 
