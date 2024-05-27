@@ -1,5 +1,6 @@
 let generateButton = document.querySelector("#generate")
 let bingoGrid = document.querySelector("#bingo")
+let type
 
 let alreadygenerated = []
 
@@ -35,7 +36,7 @@ generateButton.addEventListener("click", function onClick () {
             let w = document.querySelector(`#casebingo${i}`)
             let g
             g = getRandomNumber(40)
-            let t1 = await titles.bingocards[g]
+            let t1 = await titles.type.bingocards[g]
             let t1t = t1.title
             w.append(titlesc(t1t))
         }
